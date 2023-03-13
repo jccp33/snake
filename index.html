@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="./img/icon.png"/>
+    <title>SNAKE</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body onkeypress="CheckArrows(ev);">
+
+    <div class="main-container">
+        <div class="title">
+            <div class="text-title">SNAKE</div>
+        </div>
+        <div class="variables">
+            <div id="div_score">SCORE: 0</div>
+            <div id="div_time">TIEMPO: 0 seg</div>
+        </div>
+        <div class="buttons" id="div-btns">
+            <button disabled onclick="StartGame();">INICIO</button>
+            <button disabled onclick="PauseGame();">PAUSE</button>
+            <button disabled onclick="location.reload();">REINICIAR</button>
+        </div>
+        <div class="content-grid">
+            <div class="grid" id="grid"></div>
+        </div>
+    </div>
+
+    <div class="div-controlls">
+        <div class="keys-container">
+            <a href="javascript: MoveUp();" class="key" title="MOVE UP">
+                <span class="arrow">&#8593;</span>
+            </a>
+        </div>
+        <div class="keys-container">
+            <a href="javascript: MoveLeft();" class="key" title="MOVE LEFT">
+                <span class="arrow">&#8592;</span>
+            </a>
+            <a href="javascript: alert('USE THESE BUTTONS OR KEYBOARD');" class="key" title="USE THESE BUTTONS OR KEYBOARD">
+                <span class="char">!</span>
+            </a>
+            <a href="javascript: MoveRight();" class="key" title="MOVE RIGHT">
+                <span class="arrow">&#8594;</span>
+            </a>  
+        </div>
+        <div class="keys-container">
+            <a href="javascript: MoveDown();" class="key" title="MOVE DOWN">
+                <span class="arrow">&#8595;</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="w-modal" id="w-modal">
+        <div class="w-modal-content">
+            <div class="div-game-over">GAME OVER</div>
+            <div class="game-data" id="modal_score">SCORE: 0</div>
+            <div class="game-data" id="modal_time">TIEMPO: 0 seg</div>
+            <button onclick="location.reload();">REINICIAR</button>
+        </div>
+    </div>
+    
+    <script src="js/setup.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

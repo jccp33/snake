@@ -1,0 +1,169 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    width: 480px;
+    margin: auto;
+}
+
+.title{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.variables{
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: darkgreen;
+}
+
+.buttons{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons>button{
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+    width: 120px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.grid{
+    border: 1px solid black;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.extra{
+    background-color: yellow;
+    width: 600px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.extra>div{
+    margin-top: 5px;
+}
+.extra>div>a{
+    text-decoration: none;
+}
+
+.w-modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(51,51,51,0.7);
+    z-index: 10;
+    text-align: center;
+}
+
+.w-modal-content{
+    width: 500px;
+    height: 225px;
+    background-color: white;
+    opacity: 1;
+    margin: 50px auto;
+    padding-top: 25px;
+    border-radius: 10px;
+}
+
+.div-game-over{
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 25px;
+}
+
+.game-data{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgreen;
+    margin: 10px;
+}
+
+.w-modal-content>button{
+    font-size: 20px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.div-controlls{
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 64px;
+}
+
+.keys-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.key{
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.key:active{
+    opacity: 0.8;
+}
+
+.arrow {
+    background-color: #333333;
+    border: 4px solid #4d4d4d;
+    border-radius: 4px;
+    color: white;
+    width: 44px;
+    height: 44px;
+    margin: 2px;
+    padding: 2px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.char{
+    background-color: darkgoldenrod;
+    border: 4px solid yellow;
+    border-radius: 4px;
+    color: white;
+    width: 44px;
+    height: 44px;
+    margin: 2px;
+    padding: 2px;
+    font-size: 32px;
+    text-align: center;
+}
